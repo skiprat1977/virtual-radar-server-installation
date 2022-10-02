@@ -268,11 +268,6 @@ if ! which mono >/dev/null 2>&1 || ! which unzip >/dev/null 2>&1; then
 fi
 
 
-# Check if this script is ran as root. (It should not be ran as root.)
-if [[ $EUID == 0 ]]; then
-   printf "Do NOT run this script as root! (Do not use 'sudo' in the command.)\n"
-   exit 2
-fi
 
 
 # Print welcome screen.
